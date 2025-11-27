@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 const api = {
-  key: "883a2406e50f764b683cc8370e2bf522",
-  base: "https://api.openweathermap.org/data/2.5/"
+  // Accessing variables from the .env file
+  key: process.env.REACT_APP_WEATHER_API_KEY, 
+  base: process.env.REACT_APP_WEATHER_BASE_URL
 }
 
 function App() {
